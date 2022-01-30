@@ -1,11 +1,10 @@
 # practical_rkyv
-How to use rkyv
 
 Table of Contents
 
 - [Background](./doc/background.md)
-- [Hello world]
-    - Most Basic Case
+- Hello world
+    - [Most Basic Case](./doc/hello_world/most_basic_case.md)
     - Safe case
     - Zero Copy Deserialization
         - Max Performance
