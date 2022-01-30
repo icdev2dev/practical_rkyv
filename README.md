@@ -2,65 +2,67 @@
 
 Table of Contents
 
-- [Background](./doc/background.md)
-- Hello world
-    - [Most Basic Case](./doc/hello_world/most_basic_case.md)
-    - Safe case
-    - Zero Copy Deserialization
-        - Max Performance
-        - Safe ZCD
+## [Background](./doc/background.md)
 
-- [Serializing struct of structs]
+## 1. Hello world
+
+### Traditional Deserialization
+- [Most Basic Case](./doc/hello_world/real_basic.md)
+- [Safe case](./doc/hello_world/safe_real_basic.md)
+### Zero Copy Deserialization
+- [Max Performance](./doc/hello_world/zcd_max_perf.md)
+- [Safe ZCD](./doc/hello_world/zcd_safe.md)
+
+## 2. Serializing struct of structs
     - Transparent Types
     - Opaque Types
 
-- [Serializing through Serializers](./hello world)
+## 3. Serializing through Serializers
     - Base Use Case 
     - Using CompositeSerializer
         - Writer
         - Scratch Space
         - Shared Pointer Map
 
-- [Alternate Writers]
+## 4. Alternate Writers
     - File, 
     - ByteBuffer
     - ...
 
+## 5. Extending Serializers
 
-- [Extending Serialization]
-
-- Deserializing Subobjects 
+## 6. Deserializing Subobjects 
     - Harmonical use of zero-copy-deserialization with traditional deserialization
 
-- Wrapper Types 
+## 7. Wrapper Types 
     - When to use 
     - How to use them effectively
         - Customizable serialization
         - Non-default behavior
         - Transparent Foreign Type Support
 
-- Archived vs original types and impl duplication
+## 8. Archived vs original types and impl duplication
 
-- Streaming in rkyv  
+## 9. Streaming in rkyv  
     - Fixed-size types 
     - Two-file solution 
     - Manual framing
 
-- Validation 
+## 10. Validation 
     - bytecheck 
     - object subtrees 
     - the default validator
     - adding validation capabilities
 
-- Basic Schema evolution
+## 11. Basic Schema evolution
     -  Enums of boxed data
 
-- Advanced Schema Evolution 
+## 12. Advanced Schema Evolution 
     - No comprehensive proto solution yet
 
-- Copy optimization and nightly features
+## 13. Copy optimization and nightly features
 
-- Derive macro features: 
+## 14. Derive macro features: 
     - archive_attr 
     - omit_bounds/archive(bound(...)) 
     - archive(compare(PartialEq, PartialOrd))
